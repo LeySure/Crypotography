@@ -1,14 +1,5 @@
-# Crypotography
-def Cryptography(text,S):
-   a=''.join(map(chr,range(97,123))).upper()
-   b=[]
-   c=[]
-   for i in a:
-  	 b.append(i)   
-   for j in range(0,len(text)):
-      if text[j] != " ":
-         c.append(b[(int(((a.index(text[j])+S)%26)))])
-      else:
-         c.append(" ")
-   return ''.join(c)  
-print(Cryptography("SPY CODER",5))
+This is a program of crypotography for communicate.
+For crypotography(text,S), text means what you type, and the S is the key number, which indicate the position of 26 alphabet.
+For example:
+if I input " I LOVE YOU" and make a S to 5
+so the programe would output " N QTAJ DTZ"
